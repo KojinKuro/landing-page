@@ -1,0 +1,54 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;   
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+
+.banner-container {
+    background-color: aquamarine;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
