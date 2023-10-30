@@ -1,3 +1,7 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -10,17 +14,41 @@ body {
 .header-container {
     display: flex;
     flex-direction: row;
-    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    background-color: #1F2937;
+    color: white;
+}
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
 }
 
 .banner-container {
-    background-color: aquamarine;
+    background-color: #1F2937;
+    color: white;
+
+    padding: 50px;
+    gap: 30px;
+
+    display: flex;
+    justify-content: center;
 }
+
+.banner-text {
+    width: 500px;
+}
+
 
 .body-container {
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: #fff;
     align-items: center;
 }
 
@@ -38,17 +66,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    background-color: #E5E7EB;
 }
 
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #fff;
+
+    padding: 50px;
+}
+
+.signup-box {
+    background-color: #3882F6;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #1F2937;
+    color: #fff;
 }
