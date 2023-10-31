@@ -136,12 +136,16 @@ a {
 .card {
     max-width: 200px;
     margin: 15px 25px 70px;
+    text-align: center;
 }
 
 .card img {
     text-align: center;
     width: 200px;
     height: 200px;
+
+    border-radius: 10px;
+    border: 7px solid #1F2937;
 }
 
 /* quote section css */
