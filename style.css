@@ -1,25 +1,61 @@
+/* overall css modifications */
+
 * {
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
-    align-items: space-between;   
+    justify-content: stretch;
+    align-items: space-between;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+.header-container,
+.banner-container,
+.body-container,
+.quote-container,
+.signup-container,
+.footer-container {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.header-background,
+.banner-background,
+.body-background,
+.quote-background,
+.signup-background,
+.footer-background {
+    display: flex;
+    justify-content: center;
+}
+
+/* header section css */
+.header-background {
+    background-color: #1F2937;
+}
+
+.logo {
+    flex: 1;
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
-    padding: 0px 20px;
-
-    background-color: #1F2937;
+    padding: 0 20px;
     color: white;
 }
 
@@ -29,36 +65,74 @@ body {
     gap: 50px;
 }
 
-.banner-container {
+a {
+    color: white;
+}
+
+/* banner section css */
+
+.banner-background {
     background-color: #1F2937;
+}
+
+.banner-container {
     color: white;
 
-    padding: 50px;
-    gap: 30px;
+    padding: 20px;
+    gap: 50px;
 
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .banner-text {
     width: 500px;
 }
 
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+/* card section css */
+
+.body-background {
+    background-color: #fff;
+}
 
 .body-container {
+    padding: 25px;
+
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     align-items: center;
 }
 
 .card-container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     max-width: 200px;
+    margin: 15px 25px 70px;
+}
+
+.card .image img {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+/* quote section css */
+
+.quote-background {
+    background-color: #E5E7EB;
 }
 
 .quote-container {
@@ -66,27 +140,40 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    background-color: #E5E7EB;
+}
+
+/* signup container css */
+
+.signup-background {
+    background-color: #fff;
 }
 
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
 
-    padding: 50px;
+    padding: 20px;
 }
 
 .signup-box {
     background-color: #3882F6;
-    padding: 50px;
+    padding: 50px 150px;
+    color: #fff;
+    width: 100%;
+
+    /* css for rounded edges */
+    border-radius: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
+}
+
+/* footer section css */
+.footer-background {
+    background-color: #1F2937;
 }
 
 .footer-container {
@@ -94,6 +181,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: #1F2937;
     color: #fff;
+    padding: 10px;
 }
